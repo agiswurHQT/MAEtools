@@ -38,3 +38,6 @@ This step will generate 2 cmd files.<br />
 *.filter25.sh<br />
 *.nor.sh<br />
 Finally we will get nor.txt file in this step<br />
+
+We use Poisson test to have the quantitative analysis. The R script is provide in MAEtools/scripts.<br />
+We will also update this function and integrate it in coming version.
