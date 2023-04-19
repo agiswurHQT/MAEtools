@@ -14,6 +14,8 @@ cutadapt Version (>= 1.8.dev0)<br />
 
 
 # Usage<br />
+Once you input the commands, the scripts will be generated in the outputpath/script which is set in config file.
+
 Step 1: Mapping<br />
 This step will generate 7 cmd files in output/script/.<br />
 The order of execution is：<br />
