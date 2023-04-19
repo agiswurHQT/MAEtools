@@ -30,7 +30,7 @@ def usage():
 	print " -z --Zoom	the zoom factor"
 
 
-        note="  \n for align process:    e.g. MAEtools.2.0.py --align --SeqType PE -c config_test.txt -i /public/agis/zhangyubo_group/huangqitong/mae/MAE-seq1.0-293T-output1/X101SC21032605-Z01-J054/1.rawdata/MAE-seq1-293T-output1_FKDL210381550-1a-N701-N501\n for samtools process: e.g. MAEtools.2.0.py --samproc -c config_test.txt -i /public/agis/zhangyubo_group/huangqitong/MAEtools/test/bwa_hg19\n for quantitative process: e.g. MAEtools.2.0.py --quantify -c config_test.txt -d 11753674 -C 15 -z 100000000 -i /public/agis/zhangyubo_group/huangqitong/MAEtools/test/bwa_hg19"
+        note="  \n for align process:    e.g. MAEtools.2.0.py --align --SeqType PE -c config_test.txt -i [INPUTPATH]\n for samtools process: e.g. MAEtools.2.0.py --samproc -c config_test.txt -i [OUTPUTPATH]/bwa_hg19\n for quantitative process: e.g. MAEtools.2.0.py --quantify -c config_test.txt -d 11753674 -C 15 -z 100000000 -i [OUTPUTPATH]/bwa_hg19"
         print
         print "note:"+note
 
