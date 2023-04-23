@@ -25,12 +25,12 @@ def usage():
         print " -st --SeqType   the sequencing type:SE/PE"
         print " -c --config     the config file for softwares and reference"
         print " -d --datasize   the reads count"
-	print " -m --multilibs	there are multiple libraries"
+	print " -m --multilibs	(merge/valid) there are multiple libraries"
 	print " -C --CycleNum 	the PCR cycle number"
 	print " -z --Zoom	the zoom factor"
 
 
-        note="  \n for align process:    e.g. MAEtools.2.0.py --align --SeqType PE -c config_test.txt -i [INPUTPATH]\n for samtools process: e.g. MAEtools.2.0.py --samproc -c config_test.txt -i [OUTPUTPATH]/bwa_hg19\n for quantitative process: e.g. MAEtools.2.0.py --quantify -c config_test.txt -d 11753674 -C 15 -z 100000000 -i [OUTPUTPATH]/bwa_hg19"
+        note="  \n for align process:    e.g. MAEtools.2.0.py --align --SeqType PE -c config_test.txt -i [INPUTPATH]\n for samtools process: e.g. MAEtools.2.0.py --samproc -m merge -c config_test.txt -i [OUTPUTPATH]/bwa_hg19\n for quantitative process: e.g. MAEtools.2.0.py --quantify -c config_test.txt -d 11753674 -C 15 -z 100000000 -i [OUTPUTPATH]/bwa_hg19"
         print
         print "note:"+note
 
@@ -71,9 +71,7 @@ def get_option():
                                 inputpath=arg
 		
 		if opt in ("-m","--multilibs"):
-			libtype='merge'
-		else:
-			libtype='valid'
+			libtype=arg
 
 		if opt in ("-d","--datasize"):
 			datasize=arg
