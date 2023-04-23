@@ -39,6 +39,6 @@ def generateCMD(inputpath,inputdict,inputtype):
 
 	temcmd=inputdict['samtools']+' sort '+inputpath+'/'+temid+'.valid.bam '+inputpath+'/'+temid+'.valid.sort\n'
 	temfile.write(temcmd)
-	temcmd=inputdict['samtools']+'view '+inputpath+'/'+temid+'.valid.sort.bam > '+inputpath+'/'+temid+'.valid.sort.sam'
+	temcmd=inputdict['samtools']+' view '+inputpath+'/'+temid+'.valid.sort.bam > '+inputpath+'/'+temid+'.valid.sort.sam'
 	temfile.write(temcmd)
 	temfile.close()
