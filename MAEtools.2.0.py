@@ -46,7 +46,7 @@ def readconfig(inputfile):
         return argdict
 
 def get_option():
-        opts,args=getopt.getopt(sys.argv[1:], "hvi:st:c:d:mC:z:", ["help","version","input=","SeqType=","config=","datasize=","align","samproc","quantify","multilibs","CycleNum","Zoom"])
+        opts,args=getopt.getopt(sys.argv[1:], "hvi:st:c:d:m:C:z:", ["help","version","input=","SeqType=","config=","datasize=","align","samproc","quantify","multilibs","CycleNum","Zoom"])
         global inputpath,stype,dictConfig,process,libtype,datasize,cyclenum,zoom
         for opt,arg in opts:
                 if opt in ("-h", "--help"):
