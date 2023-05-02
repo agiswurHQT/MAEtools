@@ -2,7 +2,7 @@
 
 # Introduction<br />
 MAEtools provides a pipeline for analysing MAE-Seq data starting at mapped paired-end sequencing reads.<br />
-It can be used on Linux.<br />
+It can be used on Linux. We opt to generate commands in a step-by-step manner for ease of use.<br />
 
 MAE-seq is an experimental technique for detecting transcriptional regulatory elements down to 25 nt. This project is a tool for analyzing MAE-seq data, which has three modules: align/psamtools/quantify.<br />
 
